@@ -29,7 +29,6 @@ import heroVisual from "@/assets/hero-visual.jpg";
 import projSakura from "@/assets/project-sakura.jpg";
 import projFlowboard from "@/assets/project-flowboard.jpg";
 import projTokyoEats from "@/assets/project-tokyoeats.jpg";
-import projInkwell from "@/assets/project-inkwell.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -82,7 +81,17 @@ const services = [
   },
 ];
 
-const projects = [
+const projects: {
+  n: string;
+  title: string;
+  year: string;
+  tags: string[];
+  stack: string;
+  desc: string;
+  metric: string;
+  image: string;
+  latest?: boolean;
+}[] = [
   {
     n: "01",
     title: "Sakura Commerce",
@@ -112,17 +121,6 @@ const projects = [
     desc: "A curated restaurant discovery platform focused on local neighborhoods in Tokyo. Searchable guides, saved lists, map views, editorial content, and a mobile-first experience.",
     metric: "Lighthouse 95+ · Excellent SEO foundations",
     image: projTokyoEats,
-  },
-  {
-    n: "04",
-    title: "Inkwell AI",
-    year: "2026",
-    tags: ["AI", "Editor", "Productivity"],
-    stack: "Next.js · TypeScript · Node.js · PostgreSQL · OpenAI · tRPC",
-    desc: "A focused AI writing workspace for long-form drafting. Structured document trees, inline suggestions, revision history, and a distraction-free editor tuned for deep work.",
-    metric: "Sub-200ms streaming · 3× faster first drafts in user tests",
-    image: projInkwell,
-    latest: true,
   },
 ];
 
