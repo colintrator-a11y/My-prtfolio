@@ -81,7 +81,17 @@ const services = [
   },
 ];
 
-const projects = [
+const projects: {
+  n: string;
+  title: string;
+  year: string;
+  tags: string[];
+  stack: string;
+  desc: string;
+  metric: string;
+  image: string;
+  latest?: boolean;
+}[] = [
   {
     n: "01",
     title: "Sakura Commerce",
