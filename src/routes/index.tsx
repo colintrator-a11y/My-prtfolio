@@ -322,12 +322,12 @@ function Hero() {
                   ~/kiioni/portfolio — zsh
                 </span>
               </div>
-              <div className="relative aspect-square">
+              <div className="relative aspect-square bg-background">
                 <img
-                  src={heroVisual}
-                  alt="Abstract developer workspace visual"
-                  width={1280}
-                  height={1280}
+                  src={travorAvatar.url}
+                  alt="Travor Wright — Full-Stack Developer"
+                  width={192}
+                  height={192}
                   className="absolute inset-0 h-full w-full object-cover animate-float"
                 />
               </div>
