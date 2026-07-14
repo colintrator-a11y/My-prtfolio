@@ -226,9 +226,9 @@ function Header() {
         <div className="flex items-center justify-between rounded-full border border-hairline bg-background/60 backdrop-blur-md pl-5 pr-2 py-2">
           <a href="#top" className="flex items-center gap-2 text-sm font-medium tracking-tight">
             <span className="grid h-6 w-6 place-items-center rounded-sm bg-primary text-primary-foreground font-mono text-[11px]">
-              辰
+              TW
             </span>
-            <span className="hidden sm:inline">Kiioni Cersa</span>
+            <span className="hidden sm:inline">Travor Wright</span>
           </a>
           <nav className="hidden md:flex items-center gap-1">
             {nav.map((n) => (
@@ -265,7 +265,7 @@ function Hero() {
               Available for new work · 2026
             </div>
             <h1 className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02]">
-              Kiioni <span className="text-gradient-red">Cersa</span>
+              Travor <span className="text-gradient-red">Wright</span>
               <span className="block text-muted-foreground font-light text-3xl sm:text-4xl lg:text-5xl mt-3">
                 Full-Stack Developer
               </span>
@@ -383,7 +383,7 @@ function About() {
         <div className="mt-14 grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div className="reveal space-y-5 text-lg text-muted-foreground leading-relaxed">
             <p>
-              I'm <span className="text-foreground">Kiioni Cersa</span>, a full-stack
+              I'm <span className="text-foreground">Travor Wright</span>, a full-stack
               developer from the United States. I turn ideas into production-ready digital
               products, combining clean frontend experiences with scalable backend
               architecture. I enjoy solving complex problems, refining performance,
@@ -807,9 +807,9 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3 text-sm text-muted-foreground">
           <span className="grid h-6 w-6 place-items-center rounded-sm bg-primary text-primary-foreground font-mono text-[11px]">
-            辰
+            TW
           </span>
-          <span>Kiioni Cersa © 2026</span>
+          <span>Travor Wright © 2026</span>
           <span className="hidden sm:inline text-hairline">·</span>
           <span className="hidden sm:inline">Built with Next.js and care.</span>
         </div>
