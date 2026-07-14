@@ -82,8 +82,6 @@ const services = [
   },
 ];
 
-import projInkwell from "@/assets/project-inkwell.jpg";
-
 const projects: {
   n: string;
   title: string;
