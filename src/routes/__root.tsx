@@ -77,25 +77,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Kiioni Cersa — Full-Stack Developer" },
+      { title: "Travor Wright — Full-Stack Developer" },
       {
         name: "description",
         content:
-          "Kiioni Cersa is a full-stack developer based in Japan building fast, scalable, and thoughtful web products—from polished interfaces to reliable backend systems.",
+          "Travor Wright is a full-stack developer based in the United States building fast, scalable, and thoughtful web products—from polished interfaces to reliable backend systems.",
       },
-      { name: "author", content: "Kiioni Cersa" },
-      { property: "og:title", content: "Kiioni Cersa — Full-Stack Developer" },
+      { name: "author", content: "Travor Wright" },
+      { property: "og:title", content: "Travor Wright — Full-Stack Developer" },
       {
         property: "og:description",
         content:
-          "Full-stack developer based in Japan. React, Next.js, TypeScript, Node.js — building fast, scalable, thoughtful web products.",
+          "Full-stack developer based in the United States. React, Next.js, TypeScript, Node.js — building fast, scalable, thoughtful web products.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Kiioni Cersa — Full-Stack Developer" },
+      { name: "twitter:title", content: "Travor Wright — Full-Stack Developer" },
       {
         name: "twitter:description",
-        content: "Full-stack developer based in Japan building thoughtful web products.",
+        content: "Full-stack developer based in the United States building thoughtful web products.",
       },
     ],
     links: [

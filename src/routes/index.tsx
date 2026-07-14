@@ -25,7 +25,7 @@ import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { useReveal } from "@/hooks/use-reveal";
 
-import heroVisual from "@/assets/hero-visual.jpg";
+import travorAvatar from "@/assets/travor-avatar.png.asset.json";
 import projSakura from "@/assets/project-sakura.jpg";
 import projFlowboard from "@/assets/project-flowboard.jpg";
 import projTokyoEats from "@/assets/project-tokyoeats.jpg";
@@ -150,19 +150,19 @@ const process = [
 const reviews = [
   {
     quote:
-      "Kiioni quickly understood our product goals and delivered a much more polished platform than we expected. The application is fast, easy to use, and the development process was incredibly smooth.",
+      "Travor quickly understood our product goals and delivered a much more polished platform than we expected. The application is fast, easy to use, and the development process was incredibly smooth.",
     name: "Maya Tanaka",
     role: "Founder, Nami Studio",
   },
   {
     quote:
-      "From frontend detail to backend reliability, Kiioni handled every part of our project with real care. Communication was clear, timelines were respected, and our team loved the result.",
+      "From frontend detail to backend reliability, Travor handled every part of our project with real care. Communication was clear, timelines were respected, and our team loved the result.",
     name: "Daniel Wong",
     role: "Product Lead, Northstar Labs",
   },
   {
     quote:
-      "Kiioni transformed a slow, difficult-to-maintain website into a fast and flexible product. We saw a noticeable improvement in performance and user engagement shortly after launch.",
+      "Travor transformed a slow, difficult-to-maintain website into a fast and flexible product. We saw a noticeable improvement in performance and user engagement shortly after launch.",
     name: "Aiko Sato",
     role: "Marketing Director, Kumo Collective",
   },
@@ -226,9 +226,9 @@ function Header() {
         <div className="flex items-center justify-between rounded-full border border-hairline bg-background/60 backdrop-blur-md pl-5 pr-2 py-2">
           <a href="#top" className="flex items-center gap-2 text-sm font-medium tracking-tight">
             <span className="grid h-6 w-6 place-items-center rounded-sm bg-primary text-primary-foreground font-mono text-[11px]">
-              辰
+              TW
             </span>
-            <span className="hidden sm:inline">Kiioni Cersa</span>
+            <span className="hidden sm:inline">Travor Wright</span>
           </a>
           <nav className="hidden md:flex items-center gap-1">
             {nav.map((n) => (
@@ -265,7 +265,7 @@ function Hero() {
               Available for new work · 2026
             </div>
             <h1 className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02]">
-              Kiioni <span className="text-gradient-red">Cersa</span>
+              Travor <span className="text-gradient-red">Wright</span>
               <span className="block text-muted-foreground font-light text-3xl sm:text-4xl lg:text-5xl mt-3">
                 Full-Stack Developer
               </span>
@@ -319,21 +319,21 @@ function Hero() {
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/50" />
                 <span className="h-2.5 w-2.5 rounded-full bg-green-500/50" />
                 <span className="ml-3 font-mono text-[11px] text-muted-foreground">
-                  ~/kiioni/portfolio — zsh
+                  ~/travor/portfolio — zsh
                 </span>
               </div>
-              <div className="relative aspect-square">
+              <div className="relative aspect-square bg-background">
                 <img
-                  src={heroVisual}
-                  alt="Abstract developer workspace visual"
-                  width={1280}
-                  height={1280}
+                  src={travorAvatar.url}
+                  alt="Travor Wright — Full-Stack Developer"
+                  width={192}
+                  height={192}
                   className="absolute inset-0 h-full w-full object-cover animate-float"
                 />
               </div>
               <div className="border-t border-hairline p-4 font-mono text-xs text-muted-foreground space-y-1">
                 <div><span className="text-primary">$</span> whoami</div>
-                <div className="pl-3 text-foreground">kiioni.cersa — full-stack developer</div>
+                <div className="pl-3 text-foreground">travor.wright — full-stack developer</div>
                 <div><span className="text-primary">$</span> status</div>
                 <div className="pl-3">shipping something new →</div>
               </div>
@@ -383,7 +383,7 @@ function About() {
         <div className="mt-14 grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div className="reveal space-y-5 text-lg text-muted-foreground leading-relaxed">
             <p>
-              I'm <span className="text-foreground">Kiioni Cersa</span>, a full-stack
+              I'm <span className="text-foreground">Travor Wright</span>, a full-stack
               developer from the United States. I turn ideas into production-ready digital
               products, combining clean frontend experiences with scalable backend
               architecture. I enjoy solving complex problems, refining performance,
@@ -807,9 +807,9 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3 text-sm text-muted-foreground">
           <span className="grid h-6 w-6 place-items-center rounded-sm bg-primary text-primary-foreground font-mono text-[11px]">
-            辰
+            TW
           </span>
-          <span>Kiioni Cersa © 2026</span>
+          <span>Travor Wright © 2026</span>
           <span className="hidden sm:inline text-hairline">·</span>
           <span className="hidden sm:inline">Built with Next.js and care.</span>
         </div>
