@@ -29,6 +29,7 @@ import heroVisual from "@/assets/hero-visual.jpg";
 import projSakura from "@/assets/project-sakura.jpg";
 import projFlowboard from "@/assets/project-flowboard.jpg";
 import projTokyoEats from "@/assets/project-tokyoeats.jpg";
+import projInkwell from "@/assets/project-inkwell.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -90,37 +91,52 @@ const projects: {
   desc: string;
   metric: string;
   image: string;
+  url: string;
   latest?: boolean;
 }[] = [
   {
     n: "01",
-    title: "Sakura Commerce",
+    title: "Fuegomagic",
     year: "2025",
-    tags: ["E-commerce", "Full Stack", "Payments"],
-    stack: "Next.js · TypeScript · Node.js · PostgreSQL · Prisma · Stripe",
-    desc: "A modern headless e-commerce platform for independent Japanese lifestyle brands. Built a fast shopping experience with a product catalog, secure checkout, customer accounts, and a lightweight merchant dashboard.",
-    metric: "42% faster page loads · 28% higher mobile conversion",
+    tags: ["Web Development", "Landing Page", "Performance"],
+    stack: "React · Next.js · TypeScript · Tailwind CSS · Vercel",
+    desc: "A polished, fast-loading brand experience built to drive engagement and conversions. Implemented responsive design, performance optimizations, and smooth interactions.",
+    metric: "Fast, accessible landing page with strong SEO foundations",
     image: projSakura,
+    url: "https://fuegomagic.com.br/",
   },
   {
     n: "02",
-    title: "Flowboard",
+    title: "Leadmaxy",
     year: "2025",
-    tags: ["SaaS", "Real-time", "Collaboration"],
-    stack: "React · Node.js · Express · MongoDB · Socket.io · Docker",
-    desc: "A collaborative project-management workspace for distributed product teams. Real-time task boards, team workspaces, comments, notifications, role-based access, and analytics.",
-    metric: "Real-time sync · 35% less manual status reporting",
+    tags: ["SaaS", "Lead Generation", "UI/UX"],
+    stack: "React · Node.js · PostgreSQL · REST API · Tailwind CSS",
+    desc: "A lead-generation platform designed to help businesses capture, manage, and convert prospects. Built with a clean interface, reliable backend, and a scalable data model.",
+    metric: "Streamlined lead capture and management flow",
     image: projFlowboard,
+    url: "https://leadmaxy.com/",
   },
   {
     n: "03",
-    title: "Tokyo Eats",
+    title: "Ehealthbr",
     year: "2024",
-    tags: ["Discovery", "Maps", "SEO"],
-    stack: "Next.js · TypeScript · PostgreSQL · Prisma · Mapbox · Vercel",
-    desc: "A curated restaurant discovery platform focused on local neighborhoods in Tokyo. Searchable guides, saved lists, map views, editorial content, and a mobile-first experience.",
-    metric: "Lighthouse 95+ · Excellent SEO foundations",
+    tags: ["Healthcare", "Web App", "Brazil"],
+    stack: "Next.js · TypeScript · Node.js · PostgreSQL · Prisma",
+    desc: "A healthcare-focused web application built for the Brazilian market. Delivered a secure, user-friendly experience for patients and providers with reliable infrastructure.",
+    metric: "Improved patient engagement and platform reliability",
     image: projTokyoEats,
+    url: "https://ehealthbr.com.br/",
+  },
+  {
+    n: "04",
+    title: "Sulboro",
+    year: "2024",
+    tags: ["Corporate", "Web Design", "SEO"],
+    stack: "Next.js · TypeScript · Tailwind CSS · Vercel",
+    desc: "A professional corporate website with strong branding, clear messaging, and optimized performance. Focused on SEO, accessibility, and a great mobile experience.",
+    metric: "Clean corporate presence with improved discoverability",
+    image: projInkwell,
+    url: "https://www.sulboro.com.br/",
   },
 ];
 
@@ -260,7 +276,7 @@ function Hero() {
             </p>
             <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground font-mono">
               <MapPin className="h-3.5 w-3.5 text-primary" />
-              日本 · Based in Japan
+              United States · Based in Florida
             </div>
 
             <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -286,7 +302,7 @@ function Hero() {
               <a href="#" aria-label="LinkedIn" className="hover:text-foreground transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="mailto:hello@kiionicersa.dev" aria-label="Email" className="hover:text-foreground transition-colors">
+              <a href="mailto:travor.wright.dev@outlook.com" aria-label="Email" className="hover:text-foreground transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
               <span className="h-px w-16 bg-hairline" />
@@ -354,7 +370,7 @@ function SectionHeader({
 
 function About() {
   const highlights = [
-    "Based in Japan",
+    "From the United States",
     "Full-stack web development",
     "Product-minded engineering",
     "Performance & scalability focused",
@@ -368,7 +384,7 @@ function About() {
           <div className="reveal space-y-5 text-lg text-muted-foreground leading-relaxed">
             <p>
               I'm <span className="text-foreground">Kiioni Cersa</span>, a full-stack
-              developer based in Japan. I turn ideas into production-ready digital
+              developer from the United States. I turn ideas into production-ready digital
               products, combining clean frontend experiences with scalable backend
               architecture. I enjoy solving complex problems, refining performance,
               and building software people genuinely enjoy using.
@@ -382,9 +398,8 @@ function About() {
               how software feels.
             </p>
             <p>
-              When I'm not writing code, you'll find me in the mountains outside
-              Tokyo, sketching architecture diagrams over coffee, or studying how
-              great products age well.
+              When I'm not writing code, you'll find me exploring new ideas, sketching
+              architecture diagrams over coffee, or studying how great products age well.
             </p>
           </div>
           <div className="reveal">
@@ -569,12 +584,14 @@ function Work() {
                     ))}
                   </div>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <button className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-foreground/90 transition-colors">
-                      Live Demo <ArrowUpRight className="h-3.5 w-3.5" />
-                    </button>
-                    <button className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm hover:bg-surface transition-colors">
-                      Case Study
-                    </button>
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-foreground/90 transition-colors"
+                    >
+                      Live Site <ArrowUpRight className="h-3.5 w-3.5" />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -677,8 +694,8 @@ function Contact() {
                 </dt>
                 <dd>
                   <div className="text-xs text-muted-foreground">Email</div>
-                  <a href="mailto:hello@kiionicersa.dev" className="text-sm hover:text-primary">
-                    hello@kiionicersa.dev
+                  <a href="mailto:travor.wright.dev@outlook.com" className="text-sm hover:text-primary">
+                    travor.wright.dev@outlook.com
                   </a>
                 </dd>
               </div>
@@ -688,7 +705,7 @@ function Contact() {
                 </dt>
                 <dd>
                   <div className="text-xs text-muted-foreground">Location</div>
-                  <div className="text-sm">Japan · Remote-friendly</div>
+                  <div className="text-sm">103 Cherry Trl, Palatka, FL</div>
                 </dd>
               </div>
             </dl>
@@ -764,7 +781,7 @@ function Contact() {
               {!loading && <ArrowRight className="h-4 w-4 ml-1" />}
             </Button>
             <p className="text-[11px] text-muted-foreground text-center">
-              I usually reply within 24 hours (JST).
+              I usually reply within 24 hours (EST).
             </p>
           </form>
         </div>
@@ -803,7 +820,7 @@ function Footer() {
           <a href="#" aria-label="LinkedIn" className="hover:text-foreground transition-colors">
             <Linkedin className="h-4 w-4" />
           </a>
-          <a href="mailto:hello@kiionicersa.dev" aria-label="Email" className="hover:text-foreground transition-colors">
+          <a href="mailto:travor.wright.dev@outlook.com" aria-label="Email" className="hover:text-foreground transition-colors">
             <Mail className="h-4 w-4" />
           </a>
         </div>
