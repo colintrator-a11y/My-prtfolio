@@ -584,12 +584,14 @@ function Work() {
                     ))}
                   </div>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <button className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-foreground/90 transition-colors">
-                      Live Demo <ArrowUpRight className="h-3.5 w-3.5" />
-                    </button>
-                    <button className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm hover:bg-surface transition-colors">
-                      Case Study
-                    </button>
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-foreground/90 transition-colors"
+                    >
+                      Live Site <ArrowUpRight className="h-3.5 w-3.5" />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -692,8 +694,8 @@ function Contact() {
                 </dt>
                 <dd>
                   <div className="text-xs text-muted-foreground">Email</div>
-                  <a href="mailto:hello@kiionicersa.dev" className="text-sm hover:text-primary">
-                    hello@kiionicersa.dev
+                  <a href="mailto:travor.wright.dev@outlook.com" className="text-sm hover:text-primary">
+                    travor.wright.dev@outlook.com
                   </a>
                 </dd>
               </div>
@@ -703,7 +705,7 @@ function Contact() {
                 </dt>
                 <dd>
                   <div className="text-xs text-muted-foreground">Location</div>
-                  <div className="text-sm">Japan · Remote-friendly</div>
+                  <div className="text-sm">103 Cherry Trl, Palatka, FL</div>
                 </dd>
               </div>
             </dl>
@@ -779,7 +781,7 @@ function Contact() {
               {!loading && <ArrowRight className="h-4 w-4 ml-1" />}
             </Button>
             <p className="text-[11px] text-muted-foreground text-center">
-              I usually reply within 24 hours (JST).
+              I usually reply within 24 hours (EST).
             </p>
           </form>
         </div>
@@ -818,7 +820,7 @@ function Footer() {
           <a href="#" aria-label="LinkedIn" className="hover:text-foreground transition-colors">
             <Linkedin className="h-4 w-4" />
           </a>
-          <a href="mailto:hello@kiionicersa.dev" aria-label="Email" className="hover:text-foreground transition-colors">
+          <a href="mailto:travor.wright.dev@outlook.com" aria-label="Email" className="hover:text-foreground transition-colors">
             <Mail className="h-4 w-4" />
           </a>
         </div>
