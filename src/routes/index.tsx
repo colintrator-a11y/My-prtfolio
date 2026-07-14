@@ -25,7 +25,7 @@ import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { useReveal } from "@/hooks/use-reveal";
 
-import heroVisual from "@/assets/hero-visual.jpg";
+import travorAvatar from "@/assets/travor-avatar.png.asset.json";
 import projSakura from "@/assets/project-sakura.jpg";
 import projFlowboard from "@/assets/project-flowboard.jpg";
 import projTokyoEats from "@/assets/project-tokyoeats.jpg";
@@ -150,19 +150,19 @@ const process = [
 const reviews = [
   {
     quote:
-      "Kiioni quickly understood our product goals and delivered a much more polished platform than we expected. The application is fast, easy to use, and the development process was incredibly smooth.",
+      "Travor quickly understood our product goals and delivered a much more polished platform than we expected. The application is fast, easy to use, and the development process was incredibly smooth.",
     name: "Maya Tanaka",
     role: "Founder, Nami Studio",
   },
   {
     quote:
-      "From frontend detail to backend reliability, Kiioni handled every part of our project with real care. Communication was clear, timelines were respected, and our team loved the result.",
+      "From frontend detail to backend reliability, Travor handled every part of our project with real care. Communication was clear, timelines were respected, and our team loved the result.",
     name: "Daniel Wong",
     role: "Product Lead, Northstar Labs",
   },
   {
     quote:
-      "Kiioni transformed a slow, difficult-to-maintain website into a fast and flexible product. We saw a noticeable improvement in performance and user engagement shortly after launch.",
+      "Travor transformed a slow, difficult-to-maintain website into a fast and flexible product. We saw a noticeable improvement in performance and user engagement shortly after launch.",
     name: "Aiko Sato",
     role: "Marketing Director, Kumo Collective",
   },
