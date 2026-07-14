@@ -333,7 +333,7 @@ function Hero() {
               </div>
               <div className="border-t border-hairline p-4 font-mono text-xs text-muted-foreground space-y-1">
                 <div><span className="text-primary">$</span> whoami</div>
-                <div className="pl-3 text-foreground">kiioni.cersa — full-stack developer</div>
+                <div className="pl-3 text-foreground">travor.wright — full-stack developer</div>
                 <div><span className="text-primary">$</span> status</div>
                 <div className="pl-3">shipping something new →</div>
               </div>
