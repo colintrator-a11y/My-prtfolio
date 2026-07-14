@@ -319,7 +319,7 @@ function Hero() {
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/50" />
                 <span className="h-2.5 w-2.5 rounded-full bg-green-500/50" />
                 <span className="ml-3 font-mono text-[11px] text-muted-foreground">
-                  ~/kiioni/portfolio — zsh
+                  ~/travor/portfolio — zsh
                 </span>
               </div>
               <div className="relative aspect-square bg-background">
