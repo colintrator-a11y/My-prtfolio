@@ -29,6 +29,7 @@ import heroVisual from "@/assets/hero-visual.jpg";
 import projSakura from "@/assets/project-sakura.jpg";
 import projFlowboard from "@/assets/project-flowboard.jpg";
 import projTokyoEats from "@/assets/project-tokyoeats.jpg";
+import projInkwell from "@/assets/project-inkwell.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
