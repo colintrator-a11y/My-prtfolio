@@ -81,6 +81,8 @@ const services = [
   },
 ];
 
+import projInkwell from "@/assets/project-inkwell.jpg";
+
 const projects: {
   n: string;
   title: string;
@@ -90,37 +92,52 @@ const projects: {
   desc: string;
   metric: string;
   image: string;
+  url: string;
   latest?: boolean;
 }[] = [
   {
     n: "01",
-    title: "Sakura Commerce",
+    title: "Fuegomagic",
     year: "2025",
-    tags: ["E-commerce", "Full Stack", "Payments"],
-    stack: "Next.js · TypeScript · Node.js · PostgreSQL · Prisma · Stripe",
-    desc: "A modern headless e-commerce platform for independent Japanese lifestyle brands. Built a fast shopping experience with a product catalog, secure checkout, customer accounts, and a lightweight merchant dashboard.",
-    metric: "42% faster page loads · 28% higher mobile conversion",
+    tags: ["Web Development", "Landing Page", "Performance"],
+    stack: "React · Next.js · TypeScript · Tailwind CSS · Vercel",
+    desc: "A polished, fast-loading brand experience built to drive engagement and conversions. Implemented responsive design, performance optimizations, and smooth interactions.",
+    metric: "Fast, accessible landing page with strong SEO foundations",
     image: projSakura,
+    url: "https://fuegomagic.com.br/",
   },
   {
     n: "02",
-    title: "Flowboard",
+    title: "Leadmaxy",
     year: "2025",
-    tags: ["SaaS", "Real-time", "Collaboration"],
-    stack: "React · Node.js · Express · MongoDB · Socket.io · Docker",
-    desc: "A collaborative project-management workspace for distributed product teams. Real-time task boards, team workspaces, comments, notifications, role-based access, and analytics.",
-    metric: "Real-time sync · 35% less manual status reporting",
+    tags: ["SaaS", "Lead Generation", "UI/UX"],
+    stack: "React · Node.js · PostgreSQL · REST API · Tailwind CSS",
+    desc: "A lead-generation platform designed to help businesses capture, manage, and convert prospects. Built with a clean interface, reliable backend, and a scalable data model.",
+    metric: "Streamlined lead capture and management flow",
     image: projFlowboard,
+    url: "https://leadmaxy.com/",
   },
   {
     n: "03",
-    title: "Tokyo Eats",
+    title: "Ehealthbr",
     year: "2024",
-    tags: ["Discovery", "Maps", "SEO"],
-    stack: "Next.js · TypeScript · PostgreSQL · Prisma · Mapbox · Vercel",
-    desc: "A curated restaurant discovery platform focused on local neighborhoods in Tokyo. Searchable guides, saved lists, map views, editorial content, and a mobile-first experience.",
-    metric: "Lighthouse 95+ · Excellent SEO foundations",
+    tags: ["Healthcare", "Web App", "Brazil"],
+    stack: "Next.js · TypeScript · Node.js · PostgreSQL · Prisma",
+    desc: "A healthcare-focused web application built for the Brazilian market. Delivered a secure, user-friendly experience for patients and providers with reliable infrastructure.",
+    metric: "Improved patient engagement and platform reliability",
     image: projTokyoEats,
+    url: "https://ehealthbr.com.br/",
+  },
+  {
+    n: "04",
+    title: "Sulboro",
+    year: "2024",
+    tags: ["Corporate", "Web Design", "SEO"],
+    stack: "Next.js · TypeScript · Tailwind CSS · Vercel",
+    desc: "A professional corporate website with strong branding, clear messaging, and optimized performance. Focused on SEO, accessibility, and a great mobile experience.",
+    metric: "Clean corporate presence with improved discoverability",
+    image: projInkwell,
+    url: "https://www.sulboro.com.br/",
   },
 ];
 
