@@ -276,7 +276,7 @@ function Hero() {
             </p>
             <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground font-mono">
               <MapPin className="h-3.5 w-3.5 text-primary" />
-              日本 · Based in Japan
+              United States · Based in Florida
             </div>
 
             <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -302,7 +302,7 @@ function Hero() {
               <a href="#" aria-label="LinkedIn" className="hover:text-foreground transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="mailto:hello@kiionicersa.dev" aria-label="Email" className="hover:text-foreground transition-colors">
+              <a href="mailto:travor.wright.dev@outlook.com" aria-label="Email" className="hover:text-foreground transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
               <span className="h-px w-16 bg-hairline" />
@@ -370,7 +370,7 @@ function SectionHeader({
 
 function About() {
   const highlights = [
-    "Based in Japan",
+    "From the United States",
     "Full-stack web development",
     "Product-minded engineering",
     "Performance & scalability focused",
@@ -384,7 +384,7 @@ function About() {
           <div className="reveal space-y-5 text-lg text-muted-foreground leading-relaxed">
             <p>
               I'm <span className="text-foreground">Kiioni Cersa</span>, a full-stack
-              developer based in Japan. I turn ideas into production-ready digital
+              developer from the United States. I turn ideas into production-ready digital
               products, combining clean frontend experiences with scalable backend
               architecture. I enjoy solving complex problems, refining performance,
               and building software people genuinely enjoy using.
@@ -398,9 +398,8 @@ function About() {
               how software feels.
             </p>
             <p>
-              When I'm not writing code, you'll find me in the mountains outside
-              Tokyo, sketching architecture diagrams over coffee, or studying how
-              great products age well.
+              When I'm not writing code, you'll find me exploring new ideas, sketching
+              architecture diagrams over coffee, or studying how great products age well.
             </p>
           </div>
           <div className="reveal">
